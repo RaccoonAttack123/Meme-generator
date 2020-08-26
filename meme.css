@@ -76,4 +76,7 @@
   padding-left: 20px;
   padding-right: 20px;
   font-style: italic;
+  letter-spacing: 4px;
+  align-items: center;
+  text-shadow: 0 0 5px #000000, 0 0 5px #000000;
 }
