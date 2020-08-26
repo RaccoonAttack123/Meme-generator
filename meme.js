@@ -9,7 +9,7 @@ let t2 = document.getElementById("t2");
 
 //click generate your meme button
 button.addEventListener("click", function(){
-  if(topText.value.length < 35 && bottomText.value.length < 35){
+  if(topText.value.length < 40 && bottomText.value.length < 40){
       document.getElementById("img1").src = image.value;
       t1.innerHTML = topText.value;
       t2.innerHTML = bottomText.value;
@@ -27,8 +27,8 @@ button.addEventListener("click", function(){
     }else if (topText.value.length >= 20 || bottomText.value.length >= 20){
       t1.style.fontWeight = "bold";
       t2.style.fontWeight = "bold";
-      t1.style.fontSize = "medium";
-      t2.style.fontSize = "medium";
+      t1.style.fontSize = "x-large";
+      t2.style.fontSize = "x-large";
       t1.style.letterSpacing = "2px";
       t2.style.letterSpacing = "2px";
       t1.style.textShadow = "0 0 5px #000000, 0 0 3px #000000;";
@@ -36,7 +36,7 @@ button.addEventListener("click", function(){
     }
     alert('Remove the image by clicking it');
   }
-  if(topText.value.length >= 35 || bottomText.value.length >= 35){
+  if(topText.value.length >= 40 || bottomText.value.length >= 40){
     alert('Text is too long');
     alert('Remove the image by clicking it');
   }
