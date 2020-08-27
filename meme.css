@@ -2,16 +2,25 @@
   width:100%;
   height:100vh;
   background-image:url("static/background_meme.jpg");
-  background-repeat:no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
   position: relative;
+}
+
+#x-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #770000;
+  background-color: aliceblue;
+  font-weight: bolder;
 }
 
 .text{
   width:90%;
   height: 20vh;
-  background-color: rgb(187, 105, 105);
-  border-radius: 20px;
+  background-color: rgb(15, 1, 1);
+  border-radius: 34px;
   box-shadow:6px 6px 15px rgb(243, 2, 2);
   display: flex;
   margin: 2% auto 20px auto;
@@ -51,11 +60,9 @@
 .button:hover {background-color: #970606}
 
 .container{
-  width:80%;
-  height: 60vh;
+  width:40%;
+  height: 55vh;
   border-radius: 20px;
-  background-color: rgb(187, 105, 105);
-  box-shadow:6px 6px 15px rgb(255, 0, 0);
   display: flex;
   margin: 2% auto 20px auto;
   position: relative;
@@ -63,20 +70,23 @@
   align-items: center;
 }
 
-.image{
-  width: 40%;
-  height: 85%;
+.container .image{
+  width: 86%;
+  height: 90%;
+  transform: scale(1, 1);
+  position: relative;
 }
 
-.text_image{
+.container .text_image{
   position: absolute;
   font: bold;
   font-size: 30px;
-  color: rgb(156, 4, 4);
+  color: rgb(255, 255, 255);
   padding-left: 20px;
   padding-right: 20px;
   font-style: italic;
   letter-spacing: 4px;
   align-items: center;
   text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+  transform: scale(1, 1)
 }
